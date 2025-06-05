@@ -1,0 +1,58 @@
+.step {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  text-align: center;
+  transition-duration: 200ms;
+  cursor: pointer;
+  color: white;
+  max-height: 40vh;
+  max-width: 80vw;
+
+}
+.step:hover {
+  border-color: oklch(76.5% 0.177 163.223);
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
+.screenshot {
+  display: flex;
+  max-width: 40vw;
+  max-height: 40vh;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  min-height: 0;
+}
+
+.project-name {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+.go-to-container {
+  display: flex;
+  flex: 1 1 0%;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.go-to-button {
+  overflow: hidden;
+  position: relative;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+.go-to-link {
+  z-index: 4;
+}

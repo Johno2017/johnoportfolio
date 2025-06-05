@@ -1,6 +1,7 @@
-import '../styles/Hero.css';
+import '../styles/Main.css';
+import Projects from './Projects';
 
-function Hero() {
+function Main() {
   return (
   <main>
     <section id="introPage">
@@ -8,7 +9,7 @@ function Hero() {
             <h2>
                 Hi! I'm <span className="poppins emerald">John</span> Ong
                 <br />Full Stack
-                <span className="poppins emerald">Developer</span><br></br>
+                <span className="poppins emerald"> Developer</span><br></br>
                 <span className="poppins emerald">DevOps</span> Engineer
             </h2>
             <p className="description">
@@ -27,7 +28,8 @@ function Hero() {
             </div>
         </div>
     </section>
+    <Projects></Projects>
   </main>);
 }
 
-export default Hero;
+export default Main;

@@ -1,12 +1,12 @@
 import './styles/App.css';
 import Header from './components/Header.tsx';
-import Hero from './components/Hero.tsx';
+import Main from './components/Main.tsx';
 
 function App() {
   return (
     <div className="app">
       <Header />
-      <Hero />
+      <Main />
     </div>
 
   );

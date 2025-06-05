@@ -1,0 +1,54 @@
+#projects {
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  flex-direction: column;
+  gap: 6rem;
+
+  @media (min-width: 1024px) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-height: 20vh;
+}
+
+h6 {
+  font-size: 1.125rem;
+  margin: 10px;
+  @media (min-width: 640px) {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+h3 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  margin: 10px;
+
+  @media (min-width: 640px) {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  @media (min-width: 768px) {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+.step-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
