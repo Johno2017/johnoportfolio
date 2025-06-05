@@ -1,5 +1,7 @@
 import '../styles/Main.css';
+import BackgroundInfo from './BackgroundInfo';
 import Projects from './Projects';
+import Footer from './Footer';
 
 function Main() {
   return (
@@ -28,7 +30,9 @@ function Main() {
             </div>
         </div>
     </section>
-    <Projects></Projects>
+    <Projects />
+    <BackgroundInfo />
+    <Footer/>
   </main>);
 }
 
