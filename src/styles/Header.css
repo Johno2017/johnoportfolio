@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.scrolling {
+  border-bottom-width: 1px;
+  border-style: solid;
+  transition-duration: 200ms;
+}
+
+.intro {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+b {
+  margin-left: 2.5rem;
+  font-weight: 700;
+}
+
+.tabs {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  gap: 1rem;
+  align-items: center;
+
+  @media (min-width: 640px) {
+    display: flex;
+  }
+}
+
+a {
+    color:white;
+    transition-duration: 200ms;
+    text-decoration: none;
+}
+
+a:hover {
+    color: oklch(76.5% .177 163.223);
+}
+
