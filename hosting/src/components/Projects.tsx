@@ -29,7 +29,7 @@ let projects: Projects[] = [
     src: "/SamuraiGrab.png",
 
     description:
-      "Developed a 2D reflex-based minigame using the Unreal Engine Paper2D and Blueprint systems. This game focuses on precision timing and quick reaction mechanics. Gained practical experience with 2D gameplay implementation, animation states, and visual scripting workflows.",
+      "Developed a 2D reflex-based minigame using the Unreal Engine Paper2D and Blueprint systems.",
   },
   {
     href: "https://github.com/Johno2017/TwinStickWizard",
