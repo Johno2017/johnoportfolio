@@ -1,0 +1,22 @@
+.skill-container {
+    display: flex;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.skill {
+    display: flex;
+    max-height: 3rem;
+    border-radius: 1rem;
+    justify-content: center;
+    background-color: oklch(50.5% 0.177 163.223);;
+}

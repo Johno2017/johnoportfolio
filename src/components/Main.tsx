@@ -2,6 +2,7 @@ import '../styles/Main.css';
 import BackgroundInfo from './BackgroundInfo';
 import Projects from './Projects';
 import Footer from './Footer';
+import SkillSection from './SkillSection';
 
 function Main() {
   return (
@@ -30,6 +31,7 @@ function Main() {
             </div>
         </div>
     </section>
+    <SkillSection/>
     <Projects />
     <BackgroundInfo />
     <Footer/>
