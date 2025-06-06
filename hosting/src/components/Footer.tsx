@@ -1,4 +1,5 @@
 import "../styles/Footer.css";
+import {motion} from 'motion/react';
 
 function Footer() {
   return (
@@ -30,6 +31,9 @@ function Footer() {
             <span className="material-symbols-outlined">open_in_new</span>
           </a>
         </p>
+      </div>
+      <div>
+        <motion.svg></motion.svg>
       </div>
     </footer>
   );

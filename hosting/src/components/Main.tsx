@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import SkillSection from "./SkillSection";
 import { motion } from "motion/react";
 
+
 const greetingDivVariants = {
   hidden: {
     y: 100,
@@ -55,7 +56,7 @@ function Main() {
           <motion.div className="blob-inner bg-grey-lite">
             <motion.img
               alt="Headshot"
-              src="src\assets\PortfolioPhoto.PNG"
+              src='/PortfolioPhoto.PNG'
               className="head-shot"
             />
           </motion.div>
