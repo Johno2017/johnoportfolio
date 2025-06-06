@@ -6,6 +6,11 @@
     align-items: center;
 }
 
+.skill-title {
+    display: flex;
+    align-items: center;
+}
+
 .skill-list {
     display: flex;
     justify-content: center;
