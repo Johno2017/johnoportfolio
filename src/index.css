@@ -63,5 +63,13 @@ h3,
 }
 
 .emerald {
-  color: oklch(76.5% 0.177 163.223);
+  color: #31d097;
+}
+
+.emerald-shadow {
+  box-shadow:  5px 5px 5px #007b4e;
+}
+
+.emerald-border {
+  border-color: #31d097;
 }

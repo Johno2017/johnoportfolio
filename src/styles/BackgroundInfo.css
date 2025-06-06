@@ -8,7 +8,7 @@
 
 .quality {
   display: flex;
-  gap: 1.5rem;
+  justify-content: flex-end;
 
   max-width: 60vw;
   @media (min-width: 640px) {
@@ -20,6 +20,7 @@
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 600;
+  min-width: 80px;
 
   @media (min-width: 640px) {
     font-size: 3rem;
@@ -34,10 +35,8 @@
 .quality-info {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 
-  @media (min-width: 640px) {
-    gap: 2rem;
-  }
 }
 
 .quality-title {

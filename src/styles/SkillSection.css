@@ -19,5 +19,6 @@
     max-height: 3rem;
     border-radius: 1rem;
     justify-content: center;
-    background-color: oklch(50.5% 0.177 163.223);;
+    color: black;
+    background-color: white;
 }

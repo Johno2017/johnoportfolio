@@ -1,4 +1,18 @@
 import "../styles/BackgroundInfo.css";
+import { motion } from "motion/react";
+
+const scrollVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 let quality = [
   {
@@ -6,7 +20,7 @@ let quality = [
     description:
       "I’ve been working professionally as a full-stack developer since graduating in 2020, building solutions that range from fixing critical bugs to full front-end and API redesigns. " +
       "Over the past five years, I’ve developed a strong command of modern development practices and code quality standards—both as a contributor and as a reviewer." +
-        "This experience has helped me write maintainable, scalable code while also fostering team-wide productivity and collaboration.",
+      "This experience has helped me write maintainable, scalable code while also fostering team-wide productivity and collaboration.",
   },
   {
     name: "A well-versed DevOps Engineer",
@@ -24,24 +38,29 @@ let quality = [
 
 function BackgroundInfo() {
   return (
-    <section id="about" className="section-header">
+    <motion.section
+      id="about"
+      className="section-header"
+      variants={scrollVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: .2 }}
+    >
       <h6>Want to know more?</h6>
       <h3>
         A bit <span className="poppins emerald">about</span> me.
       </h3>
       <p>I am . . .</p>
       {quality.map((quality, index) => (
-        <div className="quality">
-          <p className="poppins">
-            0{index + 1}
-          </p>
+        <motion.div className="quality" variants={scrollVariants}>
+          <p className="poppins">0{index + 1}</p>
           <div className="quality-info">
             <h3 className="quality-title">{quality.name}</h3>
             <p>{quality.description}</p>
           </div>
-        </div>
+        </motion.div>
       ))}
-    </section>
+    </motion.section>
   );
 }
 

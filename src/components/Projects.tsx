@@ -1,5 +1,19 @@
 import "../styles/Projects.css";
 import Step from "./Step.tsx";
+import { motion } from "motion/react";
+
+const scrollVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 interface Projects {
   href: string;
@@ -36,12 +50,18 @@ let projects: Projects[] = [
 function Projects() {
   return (
     <section id="projects">
-      <div className="section-title">
+      <motion.div
+        className="section-title"
+        variants={scrollVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 1.0 }}
+      >
         <h6>A few of my creative endeavors.</h6>
         <h3>
           Curious to <span className="poppins emerald">see</span> my work?
         </h3>
-      </div>
+      </motion.div>
       <div className="step-section">
         {projects.map((project) => (
           <Step
