@@ -24,8 +24,8 @@
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   border-bottom-width: 1px;
-  border-bottom-style:solid;
-  border-color: oklch(76.5% .177 163.223);
+  border-bottom-style: solid;
+  border-color: oklch(76.5% 0.177 163.223);
   background-color: rgb(0, 0, 0);
 }
 
@@ -47,8 +47,19 @@
   font-size: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-radius: 20px;
-}
 
+  @media (max-width: 390px) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 0.75rem;
+    max-height: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

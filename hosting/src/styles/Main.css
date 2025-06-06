@@ -82,6 +82,16 @@ h2 {
   border-width: 1px;
   border-style: solid;
   border-color:rgb(12, 12, 12);
+
+  @media (max-width: 390px ) {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+  @media (max-width: 450px ) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 .blob-inner {
@@ -94,6 +104,7 @@ h2 {
 .head-shot {
   object-fit: contain;
   max-height: 70vh;
+  max-width: 70vw;
   border-radius: 50% 50% 60% 40% / 83% 85% 15% 17% ;
 }
 

@@ -31,8 +31,8 @@ let quality = [
   {
     name: "A Passionate Creative",
     description:
-      "Outside of work, I’m deeply passionate about music and video games. In my free time, I love creating personal game projects—often composing original music to go along with them. Along the way, I’ve explored everything from pixel art fundamentals to music theory, driven by a genuine love for learning and creative expression. " +
-      "What draws me to game development is the blend of art, technology, and storytelling—it is a space where I can build, experiment, and share meaningful experiences with others.",
+      "Outside of work, I’m deeply passionate about music and video games. In my free time, I love creating personal game projects and I often compose original music to go along with them. Along the way, I’ve explored everything from pixel art fundamentals to music theory, driven by a genuine love for learning and creative expression. " +
+      "What draws me to game development is the blend of art, technology, and storytelling. It is a space where I can build, experiment, and share meaningful experiences with others.",
   },
 ];
 
@@ -52,12 +52,9 @@ function BackgroundInfo() {
       </h3>
       <p>I am . . .</p>
       {quality.map((quality, index) => (
-        <motion.div className="quality" variants={scrollVariants}>
-          <p className="poppins">0{index + 1}</p>
-          <div className="quality-info">
+        <motion.div key={index} className="quality" variants={scrollVariants}>
             <h3 className="quality-title">{quality.name}</h3>
             <p>{quality.description}</p>
-          </div>
         </motion.div>
       ))}
     </motion.section>

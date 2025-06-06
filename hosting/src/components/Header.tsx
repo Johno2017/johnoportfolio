@@ -8,7 +8,7 @@ interface SectionLink {
 
 const sections: SectionLink[] = [
   { name: "Projects", id: "projects" },
-  { name: "About Me", id: "about" },
+  { name: "About", id: "about" },
   { name: "Contact", id: "contact" },
 ];
 

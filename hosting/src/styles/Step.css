@@ -12,6 +12,10 @@
   cursor: pointer;
   color: white;
   max-width: 80vw;
+
+  @media (max-width: 450px) {
+    padding: 1rem;
+  }
 }
 
 .info {
