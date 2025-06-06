@@ -1,15 +1,23 @@
 import "../styles/Header.css";
+import { motion } from "motion/react";
 
 interface SectionLink {
   name: string;
-  href: string;
+  id: string;
 }
 
 const sections: SectionLink[] = [
-  { name: "Projects", href: "#Projects" },
-  { name: "About Me", href: "#About" },
-  { name: "Contact", href: "#Contact" },
+  { name: "Projects", id: "projects" },
+  { name: "About Me", id: "about" },
+  { name: "Contact", id: "contact" },
 ];
+
+const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+  element?.scrollIntoView({
+    behavior: "smooth",
+  });
+};
 
 function Header() {
   return (
@@ -19,9 +27,19 @@ function Header() {
       </h1>
       <div className="tabs">
         {sections.map((section, index) => (
-          <a key={index} href={section.href}>
-            <p>{section.name}</p>
-          </a>
+          <motion.button
+            key={index}
+            onClick={() => {
+              scrollToSection(section.id);
+            }}
+            whileHover={{
+              scale: 1.05,
+              color: "#000000",
+              boxShadow: "5px 5px 5px  #31d097"
+            }}
+          >
+            {section.name}
+          </motion.button>
         ))}
       </div>
     </header>

@@ -32,7 +32,7 @@ function Step({ href, src, name, description }: Props) {
       variants={stepVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.2 }}
       whileHover={{
         scale: 1.05,
         borderColor: "#31d097",

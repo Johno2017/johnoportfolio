@@ -42,12 +42,13 @@
   display: flex;
 }
 
-.tabs > a {
-    color:white;
-    transition-duration: 200ms;
-    text-decoration: none;
-    :hover {
-      color: oklch(76.5% .177 163.223)
-    };
+.tabs > button {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-radius: 20px;
 }
 
