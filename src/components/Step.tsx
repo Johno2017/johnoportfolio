@@ -17,9 +17,7 @@ function Step({ href, src, name, description }: Props) {
         <h3 className="poppins emerald project-name">{name}</h3>
           <p>{description}</p>
           <div className="go-to-container">
-            <div>
-              <p className="z-4">Go to &rarr;</p>
-            </div>
+              <p>Go to &rarr;</p>
           </div>
       </div>
     </a>

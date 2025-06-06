@@ -1,15 +1,14 @@
 main {
   display: flex;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin-inline: 10rem;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   flex: 1 1 0%;
   max-width: 80vw;
   
-  @media (max-width: 1024px) {
-    margin-inline: 5rem;
-  }
 }
 
 section {
@@ -27,6 +26,10 @@ section {
   @media (min-width: 1024px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+
+.black-text {
+  color: black;
 }
 
 .title-section {

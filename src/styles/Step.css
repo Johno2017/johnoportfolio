@@ -12,18 +12,22 @@
   cursor: pointer;
   color: white;
   max-width: 80vw;
-
 }
+
 .step:hover {
   border-color: oklch(76.5% 0.177 163.223);
 }
 
-.info{
+.info {
   display: flex;
   flex-direction: column;
   flex: 1;
   min-width: 300px;
   max-height: 40vh;
+}
+
+.info > p {
+  font-size: 1.25rem;
 }
 
 .screenshot {
@@ -35,16 +39,17 @@
 }
 
 .project-name {
-  font-size: 1.25rem;
+  font-size: 2rem;
   line-height: 1.75rem;
   font-weight: 500;
 }
 
 .go-to-container {
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   flex: 1 1 0%;
   gap: 1rem;
-  align-items: flex-end;
 }
 
 .go-to-button {
