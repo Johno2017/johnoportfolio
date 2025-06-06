@@ -45,7 +45,7 @@ function Main() {
           <motion.p className="description" variants={greetingDivVariants}>
             I specialize as a <span className="emerald">.NET developer</span>{" "}
             with many years of practical experience working in{" "}
-            <span className="emerald">C#, SQL, and JavaScript.</span>I also have
+            <span className="emerald">C#, SQL, and JavaScript.</span> I also have
             experience with CI/CD pipelines and automation in{" "}
             <span className="emerald">Jenkins, GitLab, and Azure DevOps.</span>
           </motion.p>
