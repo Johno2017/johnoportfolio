@@ -39,11 +39,11 @@ let projects: Projects[] = [
       "Designed and implemented a top-down twin-stick shooter emphasizing dynamic combat, survival mechanics, and upgradeable player abilities.",
   },
   {
-    href: "https://github.com/Johno2017/RestitchedDemo",
-    name: "Restitched Demo",
-    src: "/RestitchedGrab.jpg",
+    href: "https://github.com/Johno2017/Unity-Prototype-5",
+    name: "Unity Junior Programmer + Essentials",
+    src: "/UnityRoadmap.png",
     description:
-      "A Unity project that demonstrates a fundamental understanding of how to create a user interface that has realtime effects on the gameplay of the project.",
+      "Completed the Unity Essentials and Unity Junior Programmer courses provided by Unity to learn game development fundamentals. (UI, Programming, Game Design, etc.)",
   },
 ];
 
